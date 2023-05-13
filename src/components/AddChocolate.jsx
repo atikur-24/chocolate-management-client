@@ -16,9 +16,9 @@ const AddChocolate = () => {
     console.log(newChocolate);
     if( name === ''  || country === '' || photo === '' ) {
       return Swal.fire({
-        title: 'Error!',
+        title: 'Warning!',
         text: 'Pleas fill up input field',
-        icon: 'error',
+        icon: 'warning',
         confirmButtonText: 'Ok'
       })
     }
@@ -66,6 +66,7 @@ const AddChocolate = () => {
             placeholder="Hot Pink Chocolate"
             className="input w-full"
             name="name"
+            // defaultValue={}
           />
          </div>
          <div className="mb-8">
